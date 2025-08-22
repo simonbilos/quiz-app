@@ -1,9 +1,14 @@
 <div class="w-screen h-screen">
-  @for (question of questions(); track question; let i = $index) { @if
-  (currentIndex() === i) {
+  @if (!showResult()) {
   <app-quiz-question
     [question]="currentQuestion()"
-    (response)="onResponse()"
+    (response)="onResponse($event)"
   ></app-quiz-question>
-  } }
+  } @if (showResult()) {
+  <div class="pl-96 pr-96 pt-8">
+    <div class="w-[768px] flex justify-center bg-[#e2e2e2]">
+      <p>Correct answered questions {{ correctAnswers() }}</p>
+    </div>
+  </div>
+  }
 </div>
