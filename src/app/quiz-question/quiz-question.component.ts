@@ -20,7 +20,7 @@ interface QuizResponse {
   templateUrl: "./quiz-question.component.html",
 })
 export class QuizQuestionComponent {
-  colors = signal(["#1f58a7", "#cf9e24", "#437164", "#dd1732"]);
+  colors = signal(["#fe3758", "#44a1e5", "#ffbf08", "#67bd3b"]);
   question = input.required<Question>();
 
   response = output<QuizResponse>();
