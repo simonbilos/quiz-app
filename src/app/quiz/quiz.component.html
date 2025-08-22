@@ -1,5 +1,9 @@
 <div class="w-screen h-screen">
-  @for (question of questions(); track question) {
-  <app-quiz-question [questions]="question"></app-quiz-question>
-  }
+  @for (question of questions(); track question; let i = $index) { @if
+  (currentIndex() === i) {
+  <app-quiz-question
+    [questions]="currentQuestion()"
+    (response)="onResponse()"
+  ></app-quiz-question>
+  } }
 </div>
