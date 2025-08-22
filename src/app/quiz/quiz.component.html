@@ -2,7 +2,7 @@
   @for (question of questions(); track question; let i = $index) { @if
   (currentIndex() === i) {
   <app-quiz-question
-    [questions]="currentQuestion()"
+    [question]="currentQuestion()"
     (response)="onResponse()"
   ></app-quiz-question>
   } }
