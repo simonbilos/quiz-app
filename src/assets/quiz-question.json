@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Aké je hlavné mesto Japonska?",
+    "answers": [
+      { "answer": "Osaka", "isCorrect": false },
+      { "answer": "Kjóto", "isCorrect": false },
+      { "answer": "Tokio", "isCorrect": true },
+      { "answer": "Hirošima", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý prvok má v periodickej tabuľke atómové číslo 1?",
+    "answers": [
+      { "answer": "Hélium", "isCorrect": false },
+      { "answer": "Kyslík", "isCorrect": false },
+      { "answer": "Vodík", "isCorrect": true },
+      { "answer": "Uhlík", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva najväčší ľudský orgán?",
+    "answers": [
+      { "answer": "Pečeň", "isCorrect": false },
+      { "answer": "Pľúca", "isCorrect": false },
+      { "answer": "Srdce", "isCorrect": false },
+      { "answer": "Koža", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "V ktorej krajine sa nachádza pyramída v Gíze?",
+    "answers": [
+      { "answer": "Mexiko", "isCorrect": false },
+      { "answer": "Sudán", "isCorrect": false },
+      { "answer": "Egypt", "isCorrect": true },
+      { "answer": "Peru", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Kto namaľoval slávny obraz Mona Líza?",
+    "answers": [
+      { "answer": "Vincent van Gogh", "isCorrect": false },
+      { "answer": "Pablo Picasso", "isCorrect": false },
+      { "answer": "Leonardo da Vinci", "isCorrect": true },
+      { "answer": "Michelangelo", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Aký je výsledok operácie $5^2 - (10 \\div 2)$?",
+    "answers": [
+      { "answer": "20", "isCorrect": true },
+      { "answer": "15", "isCorrect": false },
+      { "answer": "5", "isCorrect": false },
+      { "answer": "25", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Čo je najväčší oceán na Zemi?",
+    "answers": [
+      { "answer": "Atlantický oceán", "isCorrect": false },
+      { "answer": "Indický oceán", "isCorrect": false },
+      { "answer": "Arktický oceán", "isCorrect": false },
+      { "answer": "Tichý oceán", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "Ktorá planéta v slnečnej sústave je známa svojimi prstencami, ktoré sú tvorené ľadovými časticami?",
+    "answers": [
+      { "answer": "Mars", "isCorrect": false },
+      { "answer": "Jupiter", "isCorrect": false },
+      { "answer": "Saturn", "isCorrect": true },
+      { "answer": "Urán", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Čo je hlavnou príčinou zemetrasení?",
+    "answers": [
+      { "answer": "Sopky", "isCorrect": false },
+      { "answer": "Slnečné búrky", "isCorrect": false },
+      { "answer": "Pohyb tektonických platní", "isCorrect": true },
+      { "answer": "Príliv a odliv", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Aký je najvyšší bod na Zemi?",
+    "answers": [
+      { "answer": "Mount Everest", "isCorrect": true },
+      { "answer": "K2", "isCorrect": false },
+      { "answer": "Mount McKinley", "isCorrect": false },
+      { "answer": "Kilimandžáro", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Akú farbu majú listy rastlín, ak chýba chlorofyl?",
+    "answers": [
+      { "answer": "Modrú", "isCorrect": false },
+      { "answer": "Červenú", "isCorrect": false },
+      { "answer": "Žltú alebo bielu", "isCorrect": true },
+      { "answer": "Čiernu", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Aký je priemer kružnice, ak jej polomer je 10 cm?",
+    "answers": [
+      { "answer": "5 cm", "isCorrect": false },
+      { "answer": "10 cm", "isCorrect": false },
+      { "answer": "20 cm", "isCorrect": true },
+      { "answer": "30 cm", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Čo je najväčší ostrov na svete, ktorý nepatrí medzi kontinenty?",
+    "answers": [
+      { "answer": "Austrália", "isCorrect": false },
+      { "answer": "Grónsko", "isCorrect": true },
+      { "answer": "Madagaskar", "isCorrect": false },
+      { "answer": "Nový Zéland", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Aký je chemické označenie pre vodu?",
+    "answers": [
+      { "answer": "$CO_2$", "isCorrect": false },
+      { "answer": "$H_2O$", "isCorrect": true },
+      { "answer": "$NaCl$", "isCorrect": false },
+      { "answer": "$O_2$", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Kto bol prvým prezidentom Spojených štátov amerických?",
+    "answers": [
+      { "answer": "Abraham Lincoln", "isCorrect": false },
+      { "answer": "Thomas Jefferson", "isCorrect": false },
+      { "answer": "George Washington", "isCorrect": true },
+      { "answer": "John F. Kennedy", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva proces, ktorým rastliny premieňajú slnečné svetlo na energiu?",
+    "answers": [
+      { "answer": "Dýchanie", "isCorrect": false },
+      { "answer": "Fotosyntéza", "isCorrect": true },
+      { "answer": "Absorpcia", "isCorrect": false },
+      { "answer": "Transpirácia", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Kto bol prvým človekom, ktorý sa prešiel po Mesiaci?",
+    "answers": [
+      { "answer": "Jurij Gagarin", "isCorrect": false },
+      { "answer": "Buzz Aldrin", "isCorrect": false },
+      { "answer": "Neil Armstrong", "isCorrect": true },
+      { "answer": "John Glenn", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorá krajina má najväčší počet obyvateľov na svete?",
+    "answers": [
+      { "answer": "USA", "isCorrect": false },
+      { "answer": "Čína", "isCorrect": false },
+      { "answer": "India", "isCorrect": true },
+      { "answer": "Rusko", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Čo je hypotenúza v pravouhlom trojuholníku?",
+    "answers": [
+      { "answer": "Súčet dvoch kratších strán", "isCorrect": false },
+      { "answer": "Strana priľahlá k pravému uhlu", "isCorrect": false },
+      { "answer": "Najdlhšia strana", "isCorrect": true },
+      { "answer": "Strana oproti pravému uhlu", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "Ktoré pohorie prechádza cez Slovensko, Poľsko, Ukrajinu a Rumunsko a je druhým najdlhším v Európe?",
+    "answers": [
+      { "answer": "Alpy", "isCorrect": false },
+      { "answer": "Karpaty", "isCorrect": true },
+      { "answer": "Pyreneje", "isCorrect": false },
+      { "answer": "Apeniny", "isCorrect": false }
+    ]
+  }
+]
