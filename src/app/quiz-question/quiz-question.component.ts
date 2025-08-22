@@ -21,6 +21,7 @@ interface QuizResponse {
 })
 export class QuizQuestionComponent {
   questions = input.required<Question>();
+
   response = output<QuizResponse>();
 
   onSelect(answer: QuizAnswer) {
