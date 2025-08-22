@@ -1,10 +1,15 @@
 <div class="w-screen h-screen">
   <div class="pl-96 pr-96 pt-8">
-    <div class="w-full h-96 bg-gray-700">Otazka</div>
+    <div
+      class="w-full h-96 bg-[#e2e2e2] text-white flex items-center justify-center"
+    >
+      {{ question().question }}
+    </div>
     <div class="grid grid-cols-2 grid-rows-2 justify-center">
-      @for (question of questions().answers; track question) {
+      @for (question of question().answers; track question; let i = $index) {
       <button
         class="w-[576px] h-[144px] border hover:text-3xl"
+        [style.backgroundColor]="colors()[i]"
         (click)="onSelect(question)"
       >
         {{ question.answer }}
