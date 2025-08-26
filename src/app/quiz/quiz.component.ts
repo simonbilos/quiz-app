@@ -17,6 +17,8 @@ interface QuizResponse {
   skip: boolean;
 }
 
+type AnswerState = "correct" | "wrong" | "skipped" | "unanswered";
+
 @Component({
   selector: "app-quiz",
   imports: [QuizQuestionComponent],
@@ -29,6 +31,7 @@ export class QuizComponent {
   correctAnswers = signal<number>(0);
   skippedQuestions = signal<number>(0);
   userResponse = signal<QuizResponse>({ skip: true });
+  answerStates = signal<AnswerState[]>([]);
 
   currentQuestion = computed(() => this.questions()[this.currentIndex()]);
   showResult = computed(() => this.currentIndex() >= this.questions().length);
@@ -43,24 +46,36 @@ export class QuizComponent {
             answers: this.shuffle(question.answers),
           }));
           this.questions.set(shuffledQuestions);
+          this.answerStates.set(
+            Array(shuffledQuestions.length).fill("unanswered")
+          );
         });
     });
   }
 
   nextquestion() {
-    this.currentIndex.update((i) => i + 1);
     this.countAnswers(this.userResponse());
+    this.currentIndex.update((i) => i + 1);
     this.userResponse.set({ skip: true });
   }
 
   countAnswers(event: QuizResponse) {
-    if (event.skip) {
-      this.skippedQuestions.update((i) => i + 1);
-    } else if (this.correctQuestion(event)) {
-      this.correctAnswers.update((i) => i + 5);
-    } else {
-      this.correctAnswers.update((i) => i - 2);
-    }
+    const idx = this.currentIndex();
+    this.answerStates.update((states) => {
+      const newStates = [...states];
+      if (event.skip) {
+        newStates[idx] = "skipped";
+        this.skippedQuestions.update((i) => i + 1);
+      } else if (this.correctQuestion(event)) {
+        newStates[idx] = "correct";
+        this.correctAnswers.update((i) => i + 5);
+      } else {
+        newStates[idx] = "wrong";
+        this.correctAnswers.update((i) => i - 2);
+      }
+
+      return newStates;
+    });
   }
 
   // for shuffle I am going to use Fisher-Yates shuffle
