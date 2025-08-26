@@ -1,5 +1,12 @@
 <div class="w-screen h-screen">
   @if (!showResult()) {
+  <div class="flex justify-center gap-2 py-4 bg-amber-400">
+    @for (question of questions(); track question; let i = $index) {
+    <div
+      class="w-6 h-6 rounded-full flex items-center justify-center border-2"
+    ></div>
+    }
+  </div>
   <app-quiz-question
     [question]="currentQuestion()"
     (response)="onResponse($event)"

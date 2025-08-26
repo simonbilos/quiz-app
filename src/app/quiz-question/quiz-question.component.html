@@ -1,9 +1,11 @@
-<div class="w-fit h-fit">
-  <div class="md:pl-96 md:pr-96 pl-0 pr-0 pt-8 w-full">
+<div class="w-full flex justify-center">
+  <div class="pt-8 w-fit">
     <div
-      class="md:w-[768px] w-full h-52 bg-[#e2e2e2] text-black flex items-center justify-center text-2xl"
+      class="md:w-[768px] w-full h-52 bg-[#e2e2e2] text-black flex items-center justify-center text-2xl text-center"
     >
-      {{ question().question }}
+      <p>
+        {{ question().question }}
+      </p>
     </div>
     <div class="grid grid-cols-2 grid-rows-2 justify-center">
       @for (question of question().answers; track question; let i = $index) {

@@ -31,6 +31,7 @@ export class QuizComponent {
   userResponse = signal<QuizResponse>({ skip: true });
 
   currentQuestion = computed(() => this.questions()[this.currentIndex()]);
+  showResult = computed(() => this.currentIndex() >= this.questions().length);
 
   constructor() {
     effect(() => {
@@ -52,21 +53,15 @@ export class QuizComponent {
     this.userResponse.set({ skip: true });
   }
 
-  onResponse(event: QuizResponse) {
-    this.userResponse.set(event);
-  }
-
   countAnswers(event: QuizResponse) {
     if (event.skip) {
       this.skippedQuestions.update((i) => i + 1);
-    } else if (event.selectedAnswer?.isCorrect) {
+    } else if (this.correctQuestion(event)) {
       this.correctAnswers.update((i) => i + 5);
     } else {
       this.correctAnswers.update((i) => i - 2);
     }
   }
-
-  showResult = computed(() => this.currentIndex() >= this.questions().length);
 
   // for shuffle I am going to use Fisher-Yates shuffle
   shuffle(questions: any[]) {
@@ -76,5 +71,13 @@ export class QuizComponent {
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
+  }
+
+  correctQuestion(event: QuizResponse) {
+    return event.selectedAnswer?.isCorrect;
+  }
+
+  onResponse(event: QuizResponse) {
+    this.userResponse.set(event);
   }
 }
