@@ -16,7 +16,9 @@
     [question]="currentQuestion()"
     (response)="onResponse($event)"
   ></app-quiz-question>
-  <button (click)="nextquestion()">Next question</button>
+  <div class="flex justify-end">
+    <button (click)="nextquestion()">Next question</button>
+  </div>
   } @if (showResult()) {
   <div class="md:pl-96 md:pr-96 pt-8">
     <div class="md:w-[768px] flex justify-center bg-[#e2e2e2]">
