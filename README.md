@@ -1,5 +1,20 @@
 # QuizApp
 
+## Functionalities
+
+* Score count ✅
+
+These will be implemented later:
+* Quiz choice ❌
+* User profile ❌
+* Custom quiz creation ❌
+
+Additional functionalities may be added later
+
+
+
+## Initialization
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
 
 ## Development server
