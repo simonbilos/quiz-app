@@ -1,0 +1,29 @@
+<div class="w-screen h-screen">
+  @if (!showResult()) {
+  <div class="flex justify-center pt-8">
+    <div
+      class="flex justify-center gap-2 py-4 bg-[#e2e2e2] w-fit p-8 rounded-4xl"
+    >
+      @for (question of questions(); track question; let i = $index) {
+      <div
+        class="w-6 h-6 rounded-full flex items-center justify-center border-2"
+        [style.backgroundColor]="answerStates()[i] === `correct` ? `#00ff00` : (answerStates()[i] === `wrong` ? `#ff0000` : (answerStates()[i] === `skipped` ? `#e2e2e2` : `#ffffff`))"
+      ></div>
+      }
+    </div>
+  </div>
+  <app-quiz-question
+    [question]="currentQuestion()"
+    (response)="onResponse($event)"
+  ></app-quiz-question>
+  <div class="flex justify-end">
+    <button (click)="nextquestion()">Next question</button>
+  </div>
+  } @if (showResult()) {
+  <div class="md:pl-96 md:pr-96 pt-8">
+    <div class="md:w-[768px] flex justify-center bg-[#e2e2e2]">
+      <p>Final score {{ correctAnswers() }}</p>
+    </div>
+  </div>
+  }
+</div>
