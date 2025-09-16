@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Kto je známy ako 'Kráľ popu'?",
+    "answers": [
+      { "answer": "Elvis Presley", "isCorrect": false },
+      { "answer": "Michael Jackson", "isCorrect": true },
+      { "answer": "Prince", "isCorrect": false },
+      { "answer": "Freddie Mercury", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý nástroj má 88 klávesov?",
+    "answers": [
+      { "answer": "Husle", "isCorrect": false },
+      { "answer": "Gitara", "isCorrect": false },
+      { "answer": "Klavír", "isCorrect": true },
+      { "answer": "Flauta", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorá kapela napísala album 'The Dark Side of the Moon'?",
+    "answers": [
+      { "answer": "Pink Floyd", "isCorrect": true },
+      { "answer": "The Beatles", "isCorrect": false },
+      { "answer": "Queen", "isCorrect": false },
+      { "answer": "Led Zeppelin", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva najvyšší mužský hlas v klasickej hudbe?",
+    "answers": [
+      { "answer": "Bas", "isCorrect": false },
+      { "answer": "Tenor", "isCorrect": true },
+      { "answer": "Barytón", "isCorrect": false },
+      { "answer": "Alt", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý slovenský hudobník je známy piesňou 'Voda čo ma drží nad vodou'?",
+    "answers": [
+      { "answer": "Jožo Ráž", "isCorrect": false },
+      { "answer": "Elán", "isCorrect": false },
+      { "answer": "Peter Nagy", "isCorrect": false },
+      { "answer": "Jožo Ráž (Elán)", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva tradičný šesťstrunový nástroj, ktorý sa najčastejšie používa v rockovej hudbe?",
+    "answers": [
+      { "answer": "Gitara", "isCorrect": true },
+      { "answer": "Husle", "isCorrect": false },
+      { "answer": "Mandolína", "isCorrect": false },
+      { "answer": "Ukulele", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý hudobný skladateľ oslepol na konci svojho života, no naďalej komponoval?",
+    "answers": [
+      { "answer": "Wolfgang Amadeus Mozart", "isCorrect": false },
+      { "answer": "Ludwig van Beethoven", "isCorrect": true },
+      { "answer": "Johann Sebastian Bach", "isCorrect": false },
+      { "answer": "Franz Schubert", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý hudobný žáner vznikol v USA a je známy improvizáciou?",
+    "answers": [
+      { "answer": "Rock", "isCorrect": false },
+      { "answer": "Jazz", "isCorrect": true },
+      { "answer": "Pop", "isCorrect": false },
+      { "answer": "Opera", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva najrýchlejšie tempo v hudbe?",
+    "answers": [
+      { "answer": "Andante", "isCorrect": false },
+      { "answer": "Presto", "isCorrect": true },
+      { "answer": "Allegro", "isCorrect": false },
+      { "answer": "Largo", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý nástroj sa často označuje ako 'kráľ nástrojov'?",
+    "answers": [
+      { "answer": "Organ", "isCorrect": true },
+      { "answer": "Gitara", "isCorrect": false },
+      { "answer": "Klavír", "isCorrect": false },
+      { "answer": "Husle", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Kto skomponoval 'Štvrtú symfóniu osudu'?",
+    "answers": [
+      { "answer": "Mozart", "isCorrect": false },
+      { "answer": "Beethoven", "isCorrect": true },
+      { "answer": "Brahms", "isCorrect": false },
+      { "answer": "Čajkovskij", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý nástroj je základným prvkom v orchestri bicích nástrojov?",
+    "answers": [
+      { "answer": "Bubon", "isCorrect": true },
+      { "answer": "Tamburína", "isCorrect": false },
+      { "answer": "Triangel", "isCorrect": false },
+      { "answer": "Činely", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý známy festival sa konal v roku 1969 a stal sa symbolom hippie hnutia?",
+    "answers": [
+      { "answer": "Glastonbury", "isCorrect": false },
+      { "answer": "Woodstock", "isCorrect": true },
+      { "answer": "Coachella", "isCorrect": false },
+      { "answer": "Burning Man", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý nástroj hrá Yo-Yo Ma?",
+    "answers": [
+      { "answer": "Husle", "isCorrect": false },
+      { "answer": "Klavír", "isCorrect": false },
+      { "answer": "Violoncello", "isCorrect": true },
+      { "answer": "Flauta", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa volá typ spevu bez sprievodu hudobných nástrojov?",
+    "answers": [
+      { "answer": "A capella", "isCorrect": true },
+      { "answer": "Opera", "isCorrect": false },
+      { "answer": "Chór", "isCorrect": false },
+      { "answer": "Recitatív", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorá krajina je rodiskom opery?",
+    "answers": [
+      { "answer": "Francúzsko", "isCorrect": false },
+      { "answer": "Taliansko", "isCorrect": true },
+      { "answer": "Nemecko", "isCorrect": false },
+      { "answer": "Anglicko", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý hudobný štýl vznikol na Jamajke?",
+    "answers": [
+      { "answer": "Reggae", "isCorrect": true },
+      { "answer": "Blues", "isCorrect": false },
+      { "answer": "Rock", "isCorrect": false },
+      { "answer": "Jazz", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Kto je autorom známeho baletu 'Labutie jazero'?",
+    "answers": [
+      { "answer": "Beethoven", "isCorrect": false },
+      { "answer": "Mozart", "isCorrect": false },
+      { "answer": "Čajkovskij", "isCorrect": true },
+      { "answer": "Strauss", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ako sa nazýva skupina štyroch hudobníkov?",
+    "answers": [
+      { "answer": "Trio", "isCorrect": false },
+      { "answer": "Kvarteto", "isCorrect": true },
+      { "answer": "Kvinteto", "isCorrect": false },
+      { "answer": "Okteto", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Ktorý nástroj má struny a hrá sa naň sláčikom?",
+    "answers": [
+      { "answer": "Husle", "isCorrect": true },
+      { "answer": "Flauta", "isCorrect": false },
+      { "answer": "Klavír", "isCorrect": false },
+      { "answer": "Trombón", "isCorrect": false }
+    ]
+  }
+]

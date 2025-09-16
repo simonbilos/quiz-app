@@ -39,7 +39,7 @@ export class QuizComponent {
   constructor() {
     effect(() => {
       this.http
-        .get<Question[]>("/assets/quiz-question.json")
+        .get<Question[]>("/assets/general-knowledge.json")
         .subscribe((data) => {
           const shuffledQuestions = this.shuffle(data).map((question) => ({
             ...question,

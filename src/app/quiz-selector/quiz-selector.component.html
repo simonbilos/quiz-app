@@ -1,1 +1,16 @@
-<p>quiz-selector works!</p>
+<div class="flex justify-center">
+  <div class="md:w-[768px] w-full grid grid-rows-1 items-center">
+    <div class="flex justify-center p-4">
+      <span class="text-2xl">Choose your QUIZ</span>
+    </div>
+    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+      @for (quiz of quizzes(); track quiz) {
+      <div
+        class="bg-gray-300 rounded-2xl border-black border-2 flex justify-center items-center text-center h-16"
+      >
+        {{ quiz.name }}
+      </div>
+      }
+    </div>
+  </div>
+</div>
