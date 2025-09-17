@@ -5,12 +5,15 @@
     </div>
     <div class="grid grid-cols-2 grid-rows-2 gap-4">
       @for (quiz of quizzes(); track quiz) {
-      <div
+      <button
+        (click)="onClick(quiz.link)"
         class="bg-gray-300 rounded-2xl border-black border-2 flex justify-center items-center text-center h-16"
       >
         {{ quiz.name }}
-      </div>
+        <!-- when click, it should start QuizComponent with this quiz -->
+      </button>
       }
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>

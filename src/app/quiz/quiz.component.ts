@@ -1,4 +1,12 @@
-import { Component, signal, inject, effect, computed } from "@angular/core";
+import {
+  Component,
+  signal,
+  inject,
+  effect,
+  computed,
+  input,
+} from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { HttpClient } from "@angular/common/http";
 import { QuizQuestionComponent } from "../quiz-question/quiz-question.component";
 
@@ -26,6 +34,8 @@ type AnswerState = "correct" | "wrong" | "skipped" | "unanswered";
 })
 export class QuizComponent {
   private http = inject(HttpClient);
+  private route = inject(ActivatedRoute);
+
   questions = signal<Question[]>([]);
   currentIndex = signal<number>(0);
   correctAnswers = signal<number>(0);
@@ -33,23 +43,26 @@ export class QuizComponent {
   userResponse = signal<QuizResponse>({ skip: true });
   answerStates = signal<AnswerState[]>([]);
 
+  currentQuiz = signal(this.route.snapshot.queryParamMap.get("file") ?? "");
+
   currentQuestion = computed(() => this.questions()[this.currentIndex()]);
   showResult = computed(() => this.currentIndex() >= this.questions().length);
 
   constructor() {
     effect(() => {
-      this.http
-        .get<Question[]>("/assets/general-knowledge.json")
-        .subscribe((data) => {
-          const shuffledQuestions = this.shuffle(data).map((question) => ({
-            ...question,
-            answers: this.shuffle(question.answers),
-          }));
-          this.questions.set(shuffledQuestions);
-          this.answerStates.set(
-            Array(shuffledQuestions.length).fill("unanswered")
-          );
-        });
+      const file = this.currentQuiz();
+      if (!file) return;
+
+      this.http.get<Question[]>(file).subscribe((data) => {
+        const shuffledQuestions = this.shuffle(data).map((question) => ({
+          ...question,
+          answers: this.shuffle(question.answers),
+        }));
+        this.questions.set(shuffledQuestions);
+        this.answerStates.set(
+          Array(shuffledQuestions.length).fill("unanswered")
+        );
+      });
     });
   }
 
