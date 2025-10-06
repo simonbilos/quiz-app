@@ -1,3 +1,4 @@
+import { input } from "@angular/core";
 import { Component } from "@angular/core";
 
 @Component({
@@ -5,4 +6,6 @@ import { Component } from "@angular/core";
   imports: [],
   templateUrl: "./result.component.html",
 })
-export class ResultComponent {}
+export class ResultComponent {
+  correctAnswers = input<number>();
+}
