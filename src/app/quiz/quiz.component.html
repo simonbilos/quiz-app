@@ -1,9 +1,7 @@
-<div class="w-screen h-screen">
+<div class="w-screen flex flex-col justify-center items-center">
   @if (!showResult()) {
-  <div class="flex justify-center pt-8">
-    <div
-      class="flex justify-center gap-2 py-4 bg-[#e2e2e2] w-fit p-8 rounded-4xl"
-    >
+  <div class="flex justify-center pt-8 w-[800px] bg-[#ffffff]">
+    <div class="flex justify-center gap-2 py-4 w-fit p-8">
       @for (question of questions(); track question; let i = $index) {
       <div
         class="w-6 h-6 rounded-full flex items-center justify-center border-2"
